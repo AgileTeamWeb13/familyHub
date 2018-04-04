@@ -1,0 +1,314 @@
+* {
+	margin: 0;
+	padding: 0;
+	border:0;
+	box-sizing: border-box;
+}
+
+/* REGISTER FORM */
+.register-header {
+	background-color: #DBE6E4; 
+	height:100px; 
+	min-width:960px; 
+	position: relative;
+	font-family: 'Open Sans';
+}
+
+/*.header-items {
+	width: 500px;
+	margin: auto;
+	max-width: 100%;
+}*/
+
+.logo {
+	width: 100px;
+	/*margin-top: 5px;	*/
+}
+
+.hub-heading {
+	width: 250px;
+	top: 30px; font-size: 3em;
+	/*position: absolute;*/
+	display: inline-block;
+	float: none;
+}
+
+.card img {
+	padding: 20px;
+	object-fit: cover;
+	height: 400px;
+}
+
+.card h2,p {
+	padding: 0 20px;
+}
+
+section article .card {
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.signin-btn {
+	/*position: absolute;*/
+	/*top: 30px;*/
+	/*right: 10%;*/
+	font-size: 18px;
+	padding: 12px 40px;
+	background-color: #0F544A;;
+	color: white;
+	text-decoration: none;
+}
+
+.signin-btn:hover { 
+	color: white;
+	text-decoration: none;
+}
+
+.register-heading {
+	color: #0F544A;
+	margin: 30px 0;
+}
+
+.form-register {
+	margin: 50px auto;
+	max-width: 100%;
+	position: relative;
+	overflow: auto;
+	font-family: 'Open Sans';
+	border: solid 1px black;
+	padding: 50px;
+}
+
+.lblField {
+ 	font-size: 14px;
+}
+
+article .form-register p{
+	font-size: 14px;
+}
+
+.hubDiv {
+	border:solid 1px;
+}
+
+
+.register-btn {
+	margin: 30px auto;
+	width: 100px;
+	height: 50px;
+	background-color: #E88235;
+	color: white;
+	font-size: 16px;
+}
+
+.register-image {
+	margin: 50px auto;
+}
+
+.register-imgsize {
+	width: 440px;
+	margin: auto;
+	display: block;
+}
+
+/* LOGIN */
+
+.form-login {
+	margin: 110px auto;
+	position: relative;
+	overflow: auto;
+	font-family: 'Open Sans';
+	border: solid 1px black;
+	padding: 50px;
+}
+
+.create-account { 
+	float: right;
+	font-size: 12px;
+	/*position: absolute;
+	right: 50px;
+	margin-bottom: 20px;*/
+}
+
+.login-heading {
+	width: 100px;
+	color: #0F544A;
+	margin-bottom:30px;
+	font-size: 24px;
+}
+
+.error-msg {
+	padding: 0;
+	font-size: 12px;
+	color: crimson;
+}
+
+/*.login-btn {
+	background-color: #0F544A;
+}*/
+
+/* CREATE HUB */
+.hub-desc {
+	width: 400px;
+	max-width: 100%;
+	height: 100px;
+	border: solid 1px black;
+}
+
+.hub-cancel {
+	position: relative;
+	margin-left: 50%;
+}
+
+.hub-btn {
+	margin: 30px auto;
+	width: 120px;
+	height: 50px;
+	background-color: #0F544A;
+	color: white;
+}
+
+/*NAV BAR*/
+header nav {
+	position: fixed;
+	z-index: 20;
+}
+
+header .bg-light {
+	background-color: #0F544A !important;
+}
+
+nav #navbarNavAltMarkup .navbar-nav a {
+	font-size: 14px;
+	padding-right: 20px;
+	color: white;
+}
+
+/*HUB-PAGE*/
+.logo-nav {
+	display: flex;
+	align-items: center;
+}
+
+.top-nav {
+	display: flex;
+	/*flex-direction: row;*/
+	justify-content: space-between;
+	align-items: center;
+}
+
+.cover-pic {
+	position: relative;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("../img/cover-pic.jpg");
+    height: 50vh; 
+    /* Center and scale the image nicely */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cover-pic h1{
+	position: absolute;
+	bottom: 0;
+	color: #495057;
+	font-size: 62px;
+}
+
+.logout-nav{
+	width: 350px;
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.side-article {
+	/*position: fixed;*/
+	margin: 10px;
+	padding: 20px;
+	background-color: #51AF8C;
+	height: 300px;
+}
+
+.side-article h3 {
+	padding-bottom: 10px;
+	color: #DBE6E4;
+}
+
+article .side-article form div{
+	margin-bottom: 10px;
+	color: #DBE6E4;
+}
+
+.member img {
+	width: 60px;
+	object-fit: cover;
+	height: 50px;
+	margin-bottom: 15px;
+}
+
+/* FOOTER */
+
+.footer {
+	position: relative;
+	font-family: 'Open Sans';
+	font-size: 18px;
+}
+.primary-footer {
+	width: 100%;
+	height: 100px;
+	background-color: #DBE6E4; 
+}
+
+.secondary-footer {
+	position: absolute;
+	width: 100%;
+	height: 40px;
+	background: #51AF8C;
+	margin: 0;
+	padding: 0;
+}
+.footer-links {
+	margin: auto;
+}
+.footer .secondary-footer .terms {
+	text-align: left;
+	font-size: 12px;
+
+	/*position: absolute;
+	top: 20px;
+	left: 10px; margin: 0;*/
+}
+.footer .secondary-footer .copyrights {
+	text-align: right;
+	font-size: 12px;
+	/*top: 20px;
+	position: absolute;
+	right: 10px; margin: 0;*/
+}
+.link-ul {
+	max-width: 900px;
+	width: 100%;
+	/*margin: auto;
+	margin-top: 20px;*/
+	padding: 10px;
+    list-style-type: none;
+    margin: auto;
+    overflow: hidden;
+    
+}
+
+.form-register .link-ul {
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+.list-link {
+	text-align: center;
+	display: block;
+	float: left;
+	width: 30%;
+}
