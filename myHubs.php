@@ -72,12 +72,15 @@ include "partials/head.php";
 							$myHubs = getRecords($query);
 							// var_dump($myHubs);
 							// die();
+
+							
 							if($myHubs) {
 								foreach ($myHubs as $key => $value) {
 									echo "<div class=\"hubDiv col-md-6\">";
 									echo 	"<p>Hub Name: ".$myHubs[$key]['strName']."</p>";
 									echo 	"<p>Hub Description: ".$myHubs[$key]['strDescription']."</p>";
-									echo "<a href='hub.php?nHubID=".$myHubs[$key]['id']."&strHubName=".$myHubs[$key]['strName']."'>View Hub</a>";
+									echo "<button class='btn' onclick= hubPage(".$myHubs[$key]['id'].",'".$myHubs[$key]['strName']."')>View Hub</button>";
+
 									echo "</div>";
 								}
 							}

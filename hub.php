@@ -1,6 +1,18 @@
 <?php
 	include 'assets/my_user.php';
 	include "partials/head.php";
+
+	$sql = "SELECT * FROM users WHERE id = '".$_SESSION["ss_usr_id"]."'";
+	// var_dump($ql);
+	$arrFoundUSer = getRecord($sql);
+	// var_dump($arrFoundUSer);
+
+	$hubId = $_COOKIE['id'];
+	var_dump($hubId);
+	$hubDetails = "SELECT *	FROM hubs WHERE id= '".$hubId."'";
+	$arrHubDetails = getRecord($hubDetails);
+
+	// var_dump($arrHubDetails['strName']);
 ?>
 <!-- Gosia, 03.31.2018: previous file name: index.php -->
 
@@ -37,17 +49,19 @@
 		<section class="cover-pic">
 			<div class="bg"></div>
 			<h1>
-				<?=strtoupper($_GET['strHubName'])?>
+				<?=$arrHubDetails['strName'];?>
 			</h1>
 		</section>
 		<section>
 			<article class="col-md-3">
 				<div class="side-article ">
 					<!-- Gosia, 03.31.2018: added enctype part and changed action source -->
-					<form action="actions/content_save.php?nHubID=<?=$_GET['nHubID']?>&strHubName=<?=$_GET['strHubName']?>" method="POST" enctype="multipart/form-data">
+					<form action="actions/content_save.php" method="POST" enctype="multipart/form-data">
 						<h3>Add new photo</h3>
-						<input type="number" class="hidden" name="nUserID" value="0">
-						<input type="number" class="hidden" name="nHubID" value="<?=$_GET['nHubID']?>">
+						<input type="number" class="hidden" name="nUserID" value="<?=$arrFoundUSer['id']?>">
+						<input type="number" class="hidden" name="nHubID" value="<?=$hubId?>">
+						<input type="number" class="hidden" name="strHubName" value="<?=$arrHubDetails['strName']?>">
+
 					  	<div class="custom-file">
 					  		<label for="customFile">Upload Picture: </label>
 						  	<input type="file" class="form-control-file" id="customFile" name="pic-upload">
@@ -70,7 +84,7 @@
 			<article class="col-md-6">
 				<!-- Gosia, 03.31.2018: added php code - could be moved to a separate folder, but I wanted to make it easier for front-end changes for now-->
 				<?php
-					$nHubID = $_GET['nHubID'];
+					$nHubID = $hubId;
 					// $db = mysqli_connect('192.185.103.171', 'ashleyms_admin', 'web13', 'ashleyms_familyHub');
 					$sql = "SELECT strMedia, strTitle, strDescription FROM content WHERE nHubID = '".$nHubID."' ORDER BY `id` DESC";
 					$queryResult = getRecords($sql);
