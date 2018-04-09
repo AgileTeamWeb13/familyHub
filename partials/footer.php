@@ -13,23 +13,17 @@
 		 		</ul>
 	 		</div>
 	 	</div>
-	 	<div class="secondary-footer">
+	 	<div class="secondary-footer row">
 	 		<p class="terms col-md-6">Privacy & Terms</p>
 	 		<p class="copyrights col-md-6">Copyrights</p>
 	 	</div>
 
 	 </footer>
 <!-- END OF FOOTER -->
-
-    <!-- JQUERY SCRIPT -->
-    	<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
     <!-- JAVASCRIPT SCRIPT -->
 		<script src="js/main.js"></script>
-    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>	
-    </body>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</body>
 <!-- END OF BODY -->
 </html>
 <!-- END OF HTML -->

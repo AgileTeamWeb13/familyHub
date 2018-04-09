@@ -40,17 +40,14 @@ function connectToDB() {
 // Get multiple records
 function getRecords($query) {
 	$conn = connectToDB();
+	$result = array();
 	$queryResult = mysqli_query($conn, $query);
+
     while( $rowArray = mysqli_fetch_assoc($queryResult)){
 		$result[] = $rowArray;
 	}
 	mysqli_close($conn);
-	if(!empty($result)) {
-		return $result;
-	}
-	else {
-		return null;
-	}
+	return $result;
 }
 
 
@@ -102,6 +99,4 @@ function uploadFile($whichFile) {
 	move_uploaded_file($tempFile, "../img/content/".$name);
 	return $name;
 }
-
-
 ?>

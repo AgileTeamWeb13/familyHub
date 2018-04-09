@@ -56,13 +56,12 @@ include "partials/head.php";
 							<li><a href="">FAQ</a></li>
 							<li><a href="">About Us</a></li>
 						</ul>
-
 						<a href="createHub.php" class="signin-btn" title="Create New Hub">Create New Hub</a>
 					</div>
 				</article>
 			<!-- REGISTER IMAGE -->
 				<article class="col-md-6">
-					<div class="register-image text-center">
+					<div class="register-image text-center row">
 						<?php
 							$query = "SELECT hubs.id, hubs.strName, hubs.strDescription
 										FROM hubs
@@ -73,15 +72,18 @@ include "partials/head.php";
 							// var_dump($myHubs);
 							// die();
 
-							
+							$count=0;
 							if($myHubs) {
 								foreach ($myHubs as $key => $value) {
+									if($count % 2) {
+										echo "<br>";
+									};
 									echo "<div class=\"hubDiv col-md-6\">";
 									echo 	"<p>Hub Name: ".$myHubs[$key]['strName']."</p>";
 									echo 	"<p>Hub Description: ".$myHubs[$key]['strDescription']."</p>";
-									echo "<button class='btn' onclick= hubPage(".$myHubs[$key]['id'].",'".$myHubs[$key]['strName']."')>View Hub</button>";
-
+									echo "<button class='btn' onclick= hubPage(".$myHubs[$key]['id'].",'".$myHubs[$key]['strName']."');>View Hub</button>";
 									echo "</div>";
+									$count++;
 								}
 							}
 							else {
