@@ -20,7 +20,7 @@
     <!-- BOOTSTRAP ICONS THEME -->
 		<link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/united/bootstrap.min.css">
         <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
-        <!-- BOOTSTRAP SCRIPT -->
+    <!-- BOOTSTRAP SCRIPT -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>

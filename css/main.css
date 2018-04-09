@@ -257,6 +257,14 @@ article .side-article form div{
 	font-size: 3rem;
 }
 
+/* Just a fix for issue:- modal window's top header is getting cut*/
+body .modal.fade .modal-dialog {
+	transform: none;
+}
+
+body .modal.in .modal-dialog {
+	transform: none;
+}
 
 /* FOOTER */
 

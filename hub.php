@@ -121,8 +121,14 @@
 					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addMember">Add Member</button>
 				</div>
 
-				<!-- Add Member Model-->
-		        <div class="modal fade" id="addMember" tabindex="-1" role="dialog" aria-hidden="true">
+				
+		        
+			</article>
+		</section>
+		
+	</main>
+	<!-- Add Member Model-->
+	<div class="modal fade" id="addMember" tabindex="-1" role="dialog" aria-hidden="true">
 		          <div class="modal-dialog" role="document">
 		            <div class="modal-content">
 		              <!-- Model Header -->
@@ -164,8 +170,5 @@
 		              </div>
 		            </div>
 		          </div>
-		        </div>
-		        <!-- End Model-->
-			</article>
-		</section>
-	</main>
+				</div>
+				<!-- End Model-->
