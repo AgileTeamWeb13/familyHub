@@ -252,8 +252,8 @@ article .side-article form div{
 
 .invite {
 	position: relative;
-	top: 41px;
 	right: 8px;
+	margin-top: 40px;
 }
 
 /* Modal */
