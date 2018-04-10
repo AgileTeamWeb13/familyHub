@@ -87,7 +87,7 @@
 					// $db = mysqli_connect('192.185.103.171', 'ashleyms_admin', 'web13', 'ashleyms_familyHub');
 					$sql = "SELECT strMedia, strTitle, strDescription, datePosted FROM content WHERE nHubID = '".$nHubID."' ORDER BY `id` DESC";
 					$queryResult = getRecords($sql);
-					var_dump($queryResult);
+					// var_dump($queryResult);
 					// die();
 					if($queryResult) {
 						foreach ($queryResult as $key => $value) {
