@@ -53,7 +53,7 @@
 			</h1>
 		</section>
 		<section class="row">
-			<article class="col-md-3">
+			<section class="col-md-3">
 				<div class="side-article ">
 					<!-- Gosia, 03.31.2018: added enctype part and changed action source -->
 					<form action="actions/content_save.php" method="POST" enctype="multipart/form-data">
@@ -79,8 +79,8 @@
 		        		<input type="submit" class="btn btn-lg signin-btn" value="POST NOW">
 					</form>
 				</div>
-			</article>
-			<article class="col-md-6">
+			</section>
+			<section class="col-md-6">
 				<!-- Gosia, 03.31.2018: added php code - could be moved to a separate folder, but I wanted to make it easier for front-end changes for now-->
 				<?php
 					$nHubID = $hubId;
@@ -106,19 +106,33 @@
 						echo "<p>There is no content yet - try adding something using the form on the left! :)</p>";
 					}
 				?>
-			</article>
-			<article class="col-md-3">
+			</section>
+			<section class="col-md-3">
 				<div class="side-article">
 					<h3>Family Members</h3>
 					<div class="row">
-						<div class="col-md-6 member"><img src="img/member1.jpg"></div>
-						<div class="col-md-6 member"><img src="img/member1.jpg"></div>
+						<div class="col-md-4">
+							<a class="button" href="#" data-toggle="modal" data-target="#addMember">+</a>
+							<p class="invite">Add</p>
+						</div>
+						<div class="col-md-4 member">
+							<img src="img/member1.jpg">
+							<p>Jill</p>
+						</div>
+						<div class="col-md-4 member">
+							<img src="img/member1.jpg">
+							<p>Sarah</p>
+						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-6 member"><img src="img/member1.jpg"></div>
-						<div class="col-md-6 member"><img src="img/member1.jpg"></div>
+						<div class="col-md-6 member">
+							<img src="img/member1.jpg">
+						</div>
+						<div class="col-md-6 member">
+							<img src="img/member1.jpg">
+						</div>
 					</div>
-					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addMember">Add Member</button>
+					<!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addMember">Add Member</button>-->
 				</div>
 				<!-- Add Member Model-->
 				<div class="modal fade" id="addMember" tabindex="-1" role="dialog" aria-hidden="true">
@@ -165,7 +179,7 @@
 		        	</div>
 				</div>
 				<!-- End Model-->
-			</article>
+			</section>
 		</section>
 		
 	</main>
