@@ -7,7 +7,8 @@
 
 /* REGISTER FORM */
 .register-header {
-	background-color: #DBE6E4;
+	background: linear-gradient(120deg, #3f8ccb, rgba(71, 181, 126, 0.9) 28%);
+	/*opacity:;*/
 	height:100px;
 	min-width:960px;
 	position: relative;
