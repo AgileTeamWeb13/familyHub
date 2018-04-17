@@ -11,5 +11,5 @@ $sql= insertRecord("INSERT INTO content (`nUserID`, `nHubID`, `strMedia`, `strTi
                         NOW()
                         )");
 
-header("location: ../hub.php");
+header("location: ../hubfeed.php");
 ?>
