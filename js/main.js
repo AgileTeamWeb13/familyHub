@@ -9,6 +9,6 @@ function hubPage (hubId, hubName) {
 	document.cookie = cookieName + "=" + cookieValue + "; path=/;";
 
 	// console.log(document.cookie);
-	window.location.href = 'hub.php';
+	window.location.href = 'hubfeed.php';
 }
 
