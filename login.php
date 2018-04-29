@@ -1,36 +1,24 @@
 <?php include "partials/head.php" ?>
 <!-- REGISTER HEADER -->
 	<header class="register-header">
-		<!-- <div class="header-items"> -->
-		<!-- LOGO IMAGE -->
-			<!-- <img src="img/logo.png" class="logo" alt="logo" class="img-fluid"> -->
-		<!-- PAGE HEADING -->
-			<!-- <h1 class="hub-heading">HEARTHPOD</h1>
-		</div> -->
-	<!-- SIGN IN BUTTON -->
-		<!-- <input type="button" name="sign-in" class="signin-btn login-btn" value="Sign In"> -->
-		<!-- <br/><a href="register.php" class="signin-btn" title="Register">REGISTER</a> -->
-
 		<div class="top-nav">
 			<div class="logo-nav">
 				<!-- LOGO IMAGE -->
 				<img src="img/logo.png" class="logo" alt="logo" class="img-fluid">
-			<!-- PAGE HEADING -->
-				<h1 class="hub-heading">HEARTHPOD</h1>
 			</div>
 			<div class="logout-nav">
-				<!-- SIGN IN BUTTON -->
+				<!-- REGISTER BUTTON -->
 				<a href="register.php" class="signin-btn">REGISTER</a>
 			</div>
 		</div>
 	</header>
 <!-- MAIN SECTION -->
 	<main>
-	<!-- REGISTER SECTION -->
+	<!-- LOGIN SECTION -->
 		<section class="container">
 			<div class="row">
 			<!-- LOGIN FORM -->
-				<article class="col-md-6">
+				<article class="col-md-6 panel">
 					<form action="actions/login_process.php" method="POST" class="form-login">
 					<!-- FORM HEADING -->
 						<a href="register.php" class="create-account">Or Create An Account</a>

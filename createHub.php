@@ -4,24 +4,13 @@ include "partials/head.php";
 ?>
 <!-- REGISTER HEADER -->
 	<header class="register-header">
-		<!-- <div> -->
-		<!-- LOGO IMAGE -->
-			<!-- <img src="img/logo.png" class="logo" alt="logo" class="img-fluid"> -->
-		<!-- PAGE HEADING -->
-			<!-- <h1 class="hub-heading">HEARTHPOD</h1>
-		</div> -->
-	<!-- SIGN IN BUTTON -->
-		<!-- <input type="submit" name="sign-in" class="signin-btn login-btn" value="Logout"> -->
-		<!-- <a href="actions/logout_process.php">LOGOUT</a> -->
 		<div class="top-nav">
 			<div class="logo-nav">
 				<!-- LOGO IMAGE -->
 				<img src="img/logo.png" class="logo" alt="logo" class="img-fluid">
-			<!-- PAGE HEADING -->
-				<h1 class="hub-heading">HEARTHPOD</h1>
 			</div>
 			<div class="logout-nav">
-				<!-- SIGN IN BUTTON -->
+				<!-- SIGN OUT BUTTON -->
 				<a href="actions/logout_process.php" class="signin-btn">LOGOUT</a>
 			</div>
 		</div>
@@ -32,7 +21,7 @@ include "partials/head.php";
 		<section class="container">
 			<div class="row">
 			<!-- HUB FORM -->
-				<article class="col-md-6">
+				<article class="col-md-6 create-hub">
 					<form action="actions/create_hub_process.php" method="POST" class="form-login">
 					<!-- FORM HEADING -->
 						<h3 class="register-heading"> CREATE HUB </h3>

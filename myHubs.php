@@ -4,21 +4,10 @@ include "partials/head.php";
 ?>
 <!-- SUCCESS PAGE HEADER -->
 	<header class="register-header">
-		<!-- <div> -->
-		<!-- LOGO IMAGE -->
-			<!-- <img src="img/logo.png" class="logo" alt="logo" class="img-fluid"> -->
-		<!-- PAGE HEADING -->
-			<!-- <h1 class="hub-heading">HEARTHPOD</h1>
-		</div> -->
-	<!-- SIGN IN BUTTON -->
-		<!-- <input type="submit" name="sign-in" class="signin-btn login-btn" value="Logout"> -->
-		<!-- <a href="actions/logout_process.php">LOGOUT</a> -->
 		<div class="top-nav">
 			<div class="logo-nav">
 				<!-- LOGO IMAGE -->
 				<img src="img/logo.png" class="logo" alt="logo" class="img-fluid">
-			<!-- PAGE HEADING -->
-				<h1 class="hub-heading">HEARTHPOD</h1>
 			</div>
 			<div class="logout-nav">
 				<!-- SIGN IN BUTTON -->
@@ -32,7 +21,7 @@ include "partials/head.php";
 		<section class="container">
 			<div class="row">
 			<!-- SUCCESS PAGE -->
-				<article class="col-md-6">
+				<article class="col-md-6 panel">
 					<div class="form-register">
 					<!-- SUCCESS HEADING -->
 						<h1>SUCESS!</h1>
@@ -60,8 +49,8 @@ include "partials/head.php";
 					</div>
 				</article>
 			<!-- REGISTER IMAGE -->
-				<article class="col-md-6">
-					<div class="register-image text-center row">
+				<article class="col-md-6 hubs">
+					<div class="text-center row">
 						<?php
 							$query = "SELECT hubs.id, hubs.strName, hubs.strDescription
 										FROM hubs

@@ -8,11 +8,14 @@
 /* REGISTER FORM */
 .register-header {
 	background: linear-gradient(120deg, #3f8ccb, rgba(71, 181, 126, 0.9) 28%);
-	/*opacity:;*/
+	opacity:0.9;
 	height:100px;
 	min-width:960px;
 	position: relative;
 	font-family: 'Open Sans';
+	position:fixed;
+	z-index:9999;
+	width:100vw;
 }
 
 /*.header-items {
@@ -22,8 +25,9 @@
 }*/
 
 .logo {
-	width: 100px;
-	/*margin-top: 5px;	*/
+	width: 175px;
+    height: 75px;
+	margin-top:15px;
 }
 
 .hub-heading {
@@ -32,6 +36,12 @@
 	/*position: absolute;*/
 	display: inline-block;
 	float: none;
+}
+
+.feed {
+	width:60vw;
+	position:absolute;
+	right:0;
 }
 
 .card img {
@@ -95,7 +105,7 @@ section article .card {
 }
 
 .register-image {
-	margin: 50px auto;
+	margin-top: 40%;
 }
 
 .register-imgsize {
@@ -136,6 +146,8 @@ section article .card {
 	color: crimson;
 }
 
+
+
 /*.login-btn {
 	background-color: #0F544A;
 }*/
@@ -159,6 +171,10 @@ section article .card {
 	height: 50px;
 	background-color: #0F544A;
 	color: white;
+}
+
+.create-hub {
+    top: 70px;
 }
 
 /*NAV BAR*/
@@ -216,14 +232,19 @@ nav #navbarNavAltMarkup .navbar-nav a {
 	display: inline-flex;
 	justify-content: space-around;
 	align-items: center;
+	position:relative;
+	right:5%;
 }
 
 .side-article {
-	/*position: fixed;*/
-	margin: 10px;
-	padding: 20px;
-	background-color: #51AF8C;
-	/* height: 300px; */
+	position: fixed;
+    top: 100px;
+    left: 0;
+    /* margin: 10px; */
+    padding: 20px;
+    background-color: white;
+     height: 90vh; 
+    z-index: 999;
 }
 
 .side-article h3 {
@@ -234,6 +255,10 @@ nav #navbarNavAltMarkup .navbar-nav a {
 article .side-article form div{
 	margin-bottom: 10px;
 	color: #DBE6E4;
+}
+
+.invite-btn, .member {
+	margin-left:35px;
 }
 
 .member img {
@@ -248,7 +273,8 @@ article .side-article form div{
 	padding: 15px 20px;
 	border-radius: 50%;
 	background: #0F544A;
-	top: 10%;
+	top: 10px;
+	left:5px;
 }
 
 .invite {
@@ -260,6 +286,7 @@ article .side-article form div{
 /* Modal */
 .modal{
 	padding: 20px;
+	z-index: 9999;
 }
 .modal-title{
 	font-size: 3rem;
@@ -267,6 +294,15 @@ article .side-article form div{
 
 body .hubpg>.row {
 	margin-right: 0;
+}
+
+.hubs, .panel {
+	margin-top: 11.9%;
+}
+
+.hubs {
+	position: relative;
+    top: 50px;
 }
 
 /* FOOTER */

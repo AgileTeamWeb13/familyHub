@@ -1,22 +1,11 @@
 <?php include "partials/head.php" ?>
 <!-- REGISTER HEADER -->
 	<header class="register-header">
-		<!-- <div class="header-items"> -->
-		<!-- LOGO IMAGE -->
-			<!-- <img src="img/logo.png" class="logo" alt="logo" class="img-fluid"> -->
-		<!-- PAGE HEADING -->
-			<!-- <h1 class="hub-heading">HEARTHPOD</h1>
-		</div> -->
-	<!-- SIGN IN BUTTON -->
-		<!-- <input type="button" name="sign-in" class="signin-btn" value="Sign In"> -->
-		<!-- <br /><a href="login.php" title="Login">LOGIN</a> -->
 
 		<div class="top-nav">
 			<div class="logo-nav">
 				<!-- LOGO IMAGE -->
 				<img src="img/logo.png" class="logo" alt="logo" class="img-fluid">
-			<!-- PAGE HEADING -->
-				<h1 class="hub-heading">HEARTHPOD</h1>
 			</div>
 			<div class="logout-nav">
 				<!-- SIGN IN BUTTON -->
@@ -30,7 +19,7 @@
 		<section class="container">
 			<div class="row">
 			<!-- REGISTER FORM -->
-				<article class="col-md-6">
+				<article class="col-md-6 panel">
 					<form action="actions/register_process.php" method="POST" class="form-register">
 					<!-- FORM HEADING -->
 						<h3 class="register-heading"> CREATE ACCOUNT </h3>
